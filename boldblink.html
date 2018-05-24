@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bold and Blink</title>
+</head>
+<body>
+    
+    <h2>Hello Caitlin!</h2>
+    <p>
+        Here is a prime example of the use of bold: <strong>TEXT IS BOLD</strong> and the use of the <span id="blinkdis">BLINKIE BLINKIE</span> tag
+    </p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script type="text/javascript"> 
+    
+        setInterval(function() {
+            $('#blinkdis').each(function() { $(this).toggle(); });
+        }, 250);
+
+    </script>
+</body>
+</html>
